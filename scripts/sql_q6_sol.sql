@@ -2,4 +2,4 @@
 
 SELECT COUNT(*) as single_pt_matches
 FROM match_mast
-WHERE goal_score = 1 AND decided_by = 'N'
+WHERE win_lose = 'W' AND goal_score = 1 AND decided_by <> 'P';
